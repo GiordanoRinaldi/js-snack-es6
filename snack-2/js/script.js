@@ -46,12 +46,20 @@ const squadreCalcio = [
     },
 ];
 
+let nuovoArr = [];
+
 for (let i = 0; i < squadreCalcio.length; i++) {
     squadreCalcio[i].puntiFatti = getRandom(1, 70);
     squadreCalcio[i].falliSubiti = getRandom(1, 150);
+
+    let nome = squadreCalcio[i].nome;
+    let falli = squadreCalcio[i].falliSubiti;
+
+    nuovoArr.push({nome, falli});
 };
 
 console.log(squadreCalcio);
 
+console.log(nuovoArr);
 
 
