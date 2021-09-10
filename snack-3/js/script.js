@@ -10,7 +10,16 @@ let numA = 3;
 
 let numB = 6;
 
+
+
 const newArray = (arr, a, b) =>  arr.filter((elm, i) => i>=a && i<= b);
 
-
 console.log(newArray(array, numA, numB));
+
+//////
+
+let newArrayy= array.filter((elm, i) => i>=numA && i<=numB);
+
+console.log(newArrayy);
+
+
