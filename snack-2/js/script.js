@@ -8,9 +8,8 @@
  * FUNZIONI
  */
 //numero random
-function getRandom(min, max) {
-    return Math.floor(Math.random() * (max - min) + min);
-}
+
+const getRandom = (min, max) => Math.floor(Math.random() * (max - min) + min);
 
 
 
@@ -46,13 +45,14 @@ const squadreCalcio = [
     },
 ];
 
-let nuovoArr = [];
+const nuovoArr = [];
 
 for (let i = 0; i < squadreCalcio.length; i++) {
-    squadreCalcio[i].puntiFatti = getRandom(1, 70);
-    squadreCalcio[i].falliSubiti = getRandom(1, 150);
 
     let {nome, falliSubiti} = squadreCalcio[i];
+
+    puntiFatti = getRandom(1, 70);
+    falliSubiti = getRandom(1, 150);
 
     nuovoArr.push({nome, falliSubiti});
 };
@@ -61,6 +61,5 @@ console.log(squadreCalcio);
 
 console.log(nuovoArr);
 
-alert("Ciao!");  
 
 
