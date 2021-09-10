@@ -61,6 +61,6 @@ console.log(squadreCalcio);
 
 console.log(nuovoArr);
 
-alert("Ciao!"); 
+alert("Ciao!");  
 
 
